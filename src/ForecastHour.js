@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 class ForecastHour extends Component {
 
-
-
   render() {
     return (
       <div className="ForecastHour">
