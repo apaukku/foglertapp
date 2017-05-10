@@ -22,3 +22,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.ForecastHour div{
+  line-height:32px;
+  margin-bottom:1px;
+  background-color:rgba(0,0,0,.5);
+}
+.ForecastHour img{
+  margin:0;
+  display: inline;
+  height: 32px;
+}
+.sunrise{
+  background-color:rgba(0,0,0,.25) !important;
+}
+
+.alarm{
+  color: #CC0000;
+}
