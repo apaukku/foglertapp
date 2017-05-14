@@ -24,9 +24,8 @@ class Weather extends Component {
   render() {
     return (
       <div className="Weather">
-        Weather
         {this.state.forecast.map(date =>
-          <ForecastDay date={date.date} key={date.date_epoch} hours={date.hour}/>
+          <ForecastDay date={date} key={date.date_epoch} />
         )}
       </div>
     );

@@ -23,20 +23,102 @@
   to { transform: rotate(360deg); }
 }
 
-.ForecastHour div{
-  line-height:32px;
-  margin-bottom:1px;
-  background-color:rgba(0,0,0,.5);
+.ForecastDay{
+  width:300px;
+  margin:10px;
+
+  float:left;
+  padding:10px 10px 20px 10px;
 }
-.ForecastHour img{
+.ForecastDay h1 img{
   margin:0;
   display: inline;
-  height: 32px;
-}
-.sunrise{
-  background-color:rgba(0,0,0,.25) !important;
+  height:48px;
 }
 
+.ForecastDay .sunny{
+  background-color:rgb(234, 185, 70);
+  padding:10px 10px 20px 10px;
+}
+.ForecastDay .cloudy{
+  background-color:rgb(41, 181, 174);
+  padding:10px 10px 20px 10px;
+}
+
+.ForecastDay a{
+  padding-top:20px;
+  display: block;
+  clear:both;
+}
+.hidden{
+  display:none;
+}
+.showAll .hidden{
+  display:block;
+}
+.visible{
+  display:block;
+}
+
+
+.ForecastHour{
+  text-align: left;
+  width:100%;
+}
+.ForecastHour .hour-row{
+  clear:both;
+}
+
+.ForecastHour .hour-row div{
+  float:left;
+  width:50px;
+}
+.ForecastHour .hour-row .hour-row-time{
+  width:45px;
+  line-height:2em;
+}
+.ForecastHour .hour-row .hour-row-icon{
+  width:40px;
+  line-height:2em;
+}
+.ForecastHour .hour-row .hour-row-temp{
+  width:55px;
+  line-height:2em;
+}
+
+.ForecastHour .hour-row .hour-row-icon img{
+  margin:0;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+.ForecastHour .hour-row .hour-row-humidity{
+  font-size:0.8em;
+  width:35px;
+}
+.ForecastHour .hour-row .hour-row-visibility{
+  font-size:0.8em;
+  width:40px;
+}
+.ForecastHour .hour-row .hour-row-wind{
+  font-size:0.8em;
+  width:40px;
+}
+.ForecastHour .hour-row .hour-row-dew{
+  font-size:0.8em;
+  width:40px;
+}
+.ForecastHour .hour-row .hour-row-cloud{
+  font-size:0.8em;
+  width:40px;
+}
+.ForecastHour .hour-row .hour-row-precip{
+  font-size:0.8em;
+  width:40px;
+}
 .alarm{
-  color: #CC0000;
+  background-color: #CC0000;
+}
+.break{
+  clear:both;
 }
