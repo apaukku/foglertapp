@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
 import ForecastDay from './ForecastDay';
 
 class Weather extends Component {
