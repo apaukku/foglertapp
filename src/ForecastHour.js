@@ -14,7 +14,7 @@ class ForecastHour extends Component {
               <div className="hour-row-temp"><strong>{Math.round(this.props.hour.temp_c)}&#8451;</strong></div>
               <div className="hour-row-humidity"> {this.props.hour.humidity}%</div>
               <div className="hour-row-visibility"> {Math.round(this.props.hour.vis_km)}km</div>
-              <div className="hour-row-wind"> {Math.round(this.props.hour.wind_kph)}kph</div>
+              <div className="hour-row-wind"> {Math.round(this.props.hour.wind_mps)}ms</div>
               <div className="hour-row-dew"> {Math.round(this.props.hour.dewpoint_c)}&#8451;</div>
               <div className="hour-row-cloud"> {Math.round(this.props.hour.cloud)}%</div>
               <div className="hour-row-precip"> {Math.round(this.props.hour.precip_mm)}mm</div>
