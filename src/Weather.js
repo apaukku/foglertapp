@@ -17,7 +17,6 @@ class Weather extends Component {
     .then((data) => {
       this.setState({forecast:data.forecast.forecastday});
       console.log(this.state.forecast);
-      console.log(this.props);
     });
 
     }
