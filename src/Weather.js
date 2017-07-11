@@ -12,12 +12,12 @@ class Weather extends Component {
   }
 
   componentDidMount() {
-    fetch('https://foglert.herokuapp.com/weather/Espoo')
+    var location = window.location.search.substring(1) ? window.location.search.substring(1) : 'Espoo';
+    fetch('https://foglert.herokuapp.com/weather/'+location)
     .then((resp) => resp.json())
     .then((data) => {
       this.setState({forecast:data.forecast.forecastday});
       console.log(this.state.forecast);
-      console.log(window.location.search.substring(1));
     });
 
     }
